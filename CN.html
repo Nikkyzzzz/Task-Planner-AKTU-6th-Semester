@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Computer Networks Study Plan</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #555;
+  }
+
+  .task label {
+    display: block;
+    margin-left: 25px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    transition: text-decoration 0.3s ease;
+    cursor: pointer;
+  }
+
+  .task input[type="checkbox"] {
+    margin-right: 10px;
+    transform: translateY(2px);
+    cursor: pointer;
+  }
+
+  .task input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: #777;
+  }
+
+  .exam {
+    text-align: center;
+    background-color: #f0ad4e;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+
+  .exam h2 {
+    font-size: 1.5em;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Computer Networks Study Plan</h1>
+  
+  <!-- Week 1: February 19 - February 24 -->
+  <div class="week">
+    <h2>Week 1: February 19 - February 24</h2>
+    <div class="task">
+      <input type="checkbox" id="task1" onclick="saveState('task1')">
+      <label for="task1" id="label_task1">Monday, February 19: Introductory Concepts: Goals and applications of networks, Categories of networks</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task2" onclick="saveState('task2')">
+      <label for="task2" id="label_task2">Tuesday, February 20: Introductory Concepts: Organization of the Internet, ISP, Network structure and architecture</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task3" onclick="saveState('task3')">
+      <label for="task3" id="label_task3">Wednesday, February 21: Introductory Concepts: The OSI reference model, TCP/IP protocol suite</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task4" onclick="saveState('task4')">
+      <label for="task4" id="label_task4">Thursday, February 22: Introductory Concepts: Network devices and components</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task5" onclick="saveState('task5')">
+      <label for="task5" id="label_task5">Friday, February 23: Physical Layer: Network topology design, Types of connections</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task6" onclick="saveState('task6')">
+      <label for="task6" id="label_task6">Saturday, February 24: Physical Layer: Transmission media, Signal transmission and encoding</label>
+    </div>
+  </div>
+
+  <!-- Week 2: February 26 - March 2 -->
+  <div class="week">
+    <h2>Week 2: February 26 - March 2</h2>
+    <div class="task">
+      <input type="checkbox" id="task7" onclick="saveState('task7')">
+      <label for="task7" id="label_task7">Monday, February 26: Physical Layer: Network performance and transmission impairments</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task8" onclick="saveState('task8')">
+      <label for="task8" id="label_task8">Tuesday, February 27: Physical Layer: Switching techniques and multiplexing</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task9" onclick="saveState('task9')">
+      <label for="task9" id="label_task9">Wednesday, February 28: Link Layer: Framing, Error Detection and Correction</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task10" onclick="saveState('task10')">
+      <label for="task10" id="label_task10">Thursday, March 1: Link Layer: Flow control (Elementary Data Link Protocols, Sliding Window protocols)</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task11" onclick="saveState('task11')">
+      <label for="task11" id="label_task11">Friday, March 2: Medium Access Control and Local Area Networks: Channel allocation, Multiple access protocols</label>
+    </div>
+  </div>
+
+  <!-- Week 3: March 4 - March 8 -->
+  <div class="week">
+    <h2>Week 3: March 4 - March 8</h2>
+    <div class="task">
+      <input type="checkbox" id="task12" onclick="saveState('task12')">
+      <label for="task12" id="label_task12">Monday, March 4: Medium Access Control and Local Area Networks: LAN standards</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task13" onclick="saveState('task13')">
+      <label for="task13" id="label_task13">Tuesday, March 5: Medium Access Control and Local Area Networks: Link layer switches & bridges (learning bridge and spanning tree algorithms)</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task14" onclick="saveState('task14')">
+      <label for="task14" id="label_task14">Wednesday, March 6: Network Layer: Point-to-point networks, Logical addressing</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task15" onclick="saveState('task15')">
+      <label for="task15" id="label_task15">Thursday, March 7: Network Layer: Basic internetworking (IP, CIDR, ARP, RARP, DHCP, ICMP)</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task16" onclick="saveState('task16')">
+      <label for="task16" id="label_task16">Friday, March 8: Network Layer: Routing, forwarding and delivery</label>
+    </div>
+  </div>
+
+  <!-- Week 4: March 11 - March 15 -->
+  <div class="week">
+    <h2>Week 4: March 11 - March 15</h2>
+    <div class="task">
+      <input type="checkbox" id="task17" onclick="saveState('task17')">
+      <label for="task17" id="label_task17">Monday, March 11: Network Layer: Static and dynamic routing, Routing algorithms and protocols</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task18" onclick="saveState('task18')">
+      <label for="task18" id="label_task18">Tuesday, March 12: Network Layer: Congestion control algorithms, IPv6</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task19" onclick="saveState('task19')">
+      <label for="task19" id="label_task19">Wednesday, March 13: Transport Layer: Process-to-process delivery, Transport layer protocols (UDP and TCP)</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task20" onclick="saveState('task20')">
+      <label for="task20" id="label_task20">Thursday, March 14: Transport Layer: Multiplexing, Connection management</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task21" onclick="saveState('task21')">
+      <label for="task21" id="label_task21">Friday, March 15: Transport Layer: Flow control and retransmission, Window management</label>
+    </div>
+  </div>
+
+  <!-- Week 5: March 18 - March 22 -->
+  <div class="week">
+    <h2>Week 5: March 18 - March 22</h2>
+    <div class="task">
+      <input type="checkbox" id="task22" onclick="saveState('task22')">
+      <label for="task22" id="label_task22">Monday, March 18: Transport Layer: TCP Congestion control, Quality of service</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task23" onclick="saveState('task23')">
+      <label for="task23" id="label_task23">Tuesday, March 19: Application Layer: Domain Name System, World Wide Web and Hyper Text Transfer Protocol</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task24" onclick="saveState('task24')">
+      <label for="task24" id="label_task24">Wednesday, March 20: Application Layer: Electronic mail, File Transfer Protocol</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task25" onclick="saveState('task25')">
+      <label for="task25" id="label_task25">Thursday, March 21: Application Layer: Remote login, Network management</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task26" onclick="saveState('task26')">
+      <label for="task26" id="label_task26">Friday, March 22: Application Layer: Data compression, Cryptography – basic concepts</label>
+    </div>
+  </div>
+
+  <!-- Sessional Exam 1: March 18 - March 20 (Units I and II) -->
+  <div class="exam">
+    <h2>Sessional Exam 1: March 18 - March 20 (Units I and II)</h2>
+    <!-- Add details for Sessional Exam 1 -->
+  </div>
+
+  <!-- Week 6: March 25 - March 29 -->
+  <div class="week">
+    <h2>Week 6: March 25 - March 29</h2>
+    <div class="task">
+      <input type="checkbox" id="task27" onclick="saveState('task27')">
+      <label for="task27" id="label_task27">Monday, March 25: Revision and Practice for Sessional Exam 1</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task28" onclick="saveState('task28')">
+      <label for="task28" id="label_task28">Tuesday, March 26: Network Layer: Point-to-point networks, Logical addressing</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task29" onclick="saveState('task29')">
+      <label for="task29" id="label_task29">Wednesday, March 27: Network Layer: Basic internetworking (IP, CIDR, ARP, RARP, DHCP, ICMP)</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task30" onclick="saveState('task30')">
+      <label for="task30" id="label_task30">Thursday, March 28: Network Layer: Routing, forwarding and delivery</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task31" onclick="saveState('task31')">
+      <label for="task31" id="label_task31">Friday, March 29: Network Layer: Static and dynamic routing, Routing algorithms and protocols</label>
+    </div>
+  </div>
+
+  <!-- Week 7: April 1 - April 5 -->
+  <div class="week">
+    <h2>Week 7: April 1 - April 5</h2>
+    <div class="task">
+      <input type="checkbox" id="task32" onclick="saveState('task32')">
+      <label for="task32" id="label_task32">Monday, April 1: Network Layer: Congestion control algorithms, IPv6</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task33" onclick="saveState('task33')">
+      <label for="task33" id="label_task33">Tuesday, April 2: Transport Layer: Process-to-process delivery, Transport layer protocols (UDP and TCP)</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task34" onclick="saveState('task34')">
+      <label for="task34" id="label_task34">Wednesday, April 3: Transport Layer: Multiplexing, Connection management</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task35" onclick="saveState('task35')">
+      <label for="task35" id="label_task35">Thursday, April 4: Transport Layer: Flow control and retransmission, Window management</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task36" onclick="saveState('task36')">
+      <label for="task36" id="label_task36">Friday, April 5: Revision and Practice for Sessional Exam 2</label>
+    </div>
+  </div>
+
+  <!-- Sessional Exam 2: April 25 - April 27 (Units III, IV, and V) -->
+  <div class="exam">
+    <h2>Sessional Exam 2: April 25 - April 27 (Units III, IV, and V)</h2>
+    <!-- Add details for Sessional Exam 2 -->
+  </div>
+
+  <!-- Week 8: April 8 - April 12 -->
+  <div class="week">
+    <h2>Week 8: April 8 - April 12</h2>
+    <div class="task">
+      <input type="checkbox" id="task37" onclick="saveState('task37')">
+      <label for="task37" id="label_task37">Monday, April 8: Transport Layer: TCP Congestion control, Quality of service</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task38" onclick="saveState('task38')">
+      <label for="task38" id="label_task38">Tuesday, April 9: Application Layer: Domain Name System, World Wide Web and Hyper Text Transfer Protocol</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task39" onclick="saveState('task39')">
+      <label for="task39" id="label_task39">Wednesday, April 10: Application Layer: Electronic mail, File Transfer Protocol</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task40" onclick="saveState('task40')">
+      <label for="task40" id="label_task40">Thursday, April 11: Application Layer: Remote login, Network management</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task41" onclick="saveState('task41')">
+      <label for="task41" id="label_task41">Friday, April 12: Application Layer: Data compression, Cryptography – basic concepts</label>
+    </div>
+  </div>
+
+  <!-- Week 9: April 15 - April 19 -->
+  <div class="week">
+    <h2>Week 9: April 15 - April 19</h2>
+    <div class="task">
+      <input type="checkbox" id="task42" onclick="saveState('task42')">
+      <label for="task42" id="label_task42">Monday, April 15: Revision and Practice for Sessional Exam 2</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task43" onclick="saveState('task43')">
+      <label for="task43" id="label_task43">Tuesday, April 16: Network Layer: Point-to-point networks, Logical addressing</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task44" onclick="saveState('task44')">
+      <label for="task44" id="label_task44">Wednesday, April 17: Network Layer: Basic internetworking (IP, CIDR, ARP, RARP, DHCP, ICMP)</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task45" onclick="saveState('task45')">
+      <label for="task45" id="label_task45">Thursday, April 18: Network Layer: Routing, forwarding and delivery</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task46" onclick="saveState('task46')">
+      <label for="task46" id="label_task46">Friday, April 19: Network Layer: Static and dynamic routing, Routing algorithms and protocols</label>
+    </div>
+  </div>
+
+  <!-- Week 10: April 22 - April 26 -->
+  <div class="week">
+    <h2>Week 10: April 22 - April 26</h2>
+    <div class="task">
+      <input type="checkbox" id="task47" onclick="saveState('task47')">
+      <label for="task47" id="label_task47">Monday, April 22: Network Layer: Congestion control algorithms, IPv6</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task48" onclick="saveState('task48')">
+      <label for="task48" id="label_task48">Tuesday, April 23: Transport Layer: Process-to-process delivery, Transport layer protocols (UDP and TCP)</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task49" onclick="saveState('task49')">
+      <label for="task49" id="label_task49">Wednesday, April 24: Transport Layer: Multiplexing, Connection management</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task50" onclick="saveState('task50')">
+      <label for="task50" id="label_task50">Thursday, April 25: Transport Layer: Flow control and retransmission, Window management</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task51" onclick="saveState('task51')">
+      <label for="task51" id="label_task51">Friday, April 26: Revision and Practice for Final Exam</label>
+    </div>
+  </div>
+
+  <!-- Final Exam: May 1 (Units I, II, III, IV, and V) -->
+  <div class="exam">
+    <h2>Pre-University Exam: May 13 - May 18 (All Units)</h2>
+    <!-- Add details for Final Exam -->
+  </div>
+
+</div>
+
+<script>
+  // Function to save checkbox state to local storage
+  function saveState(taskId) {
+    const checkbox = document.getElementById(taskId);
+    localStorage.setItem(taskId, checkbox.checked);
+  }
+
+  // Function to load checkbox state from local storage
+  function loadState(taskId) {
+    const checkbox = document.getElementById(taskId);
+    const checked = JSON.parse(localStorage.getItem(taskId));
+    if (checked !== null) {
+      checkbox.checked = checked;
+    }
+  }
+
+  // Load saved checkbox states when the page loads
+  window.onload = function() {
+    // Iterate over all tasks and load their state
+    for (let i = 1; i <= 51; i++) {
+      loadState('task' + i);
+    }
+  };
+</script>
+
+</body>
+</html>

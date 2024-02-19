@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indian Tradition Culture and Society</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #555;
+  }
+
+  .task label {
+    display: block;
+    margin-left: 25px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    transition: text-decoration 0.3s ease;
+    cursor: pointer;
+  }
+
+  .task input[type="checkbox"] {
+    margin-right: 10px;
+    transform: translateY(2px);
+    cursor: pointer;
+  }
+
+  .task input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: #777;
+  }
+
+  .exam {
+    text-align: center;
+    background-color: #f0ad4e;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+
+  .exam h2 {
+    font-size: 1.5em;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Indian Tradition Culture and Society Study Plan</h1>
+
+  <!-- Week 1: March 1 - March 3 -->
+  <div class="week">
+    <h2>Week 1: March 1 - March 3</h2>
+    <div class="task">
+      <input type="checkbox" id="task1" onclick="saveState('task1')">
+      <label for="task1" id="label_task1">Module 1: State in Ancient India</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task2" onclick="saveState('task2')">
+      <label for="task2" id="label_task2">Module 2: Evolution of script and languages in India</label>
+    </div>
+  </div>
+
+  <!-- Week 2: March 5 - March 10 -->
+  <div class="week">
+    <h2>Week 2: March 5 - March 10</h2>
+    <div class="task">
+      <input type="checkbox" id="task3" onclick="saveState('task3')">
+      <label for="task3" id="label_task3">Module 2: The Vedas, the Upanishads, the Ramayana, and the Mahabharata</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task4" onclick="saveState('task4')">
+      <label for="task4" id="label_task4">Module 3: Pre-Vedic and Vedic Religion</label>
+    </div>
+  </div>
+
+  <!-- Week 3: March 12 - March 17 -->
+  <div class="week">
+    <h2>Week 3: March 12 - March 17</h2>
+    <div class="task">
+      <input type="checkbox" id="task5" onclick="saveState('task5')">
+      <label for="task5" id="label_task5">Module 3: Buddhism, Jainism</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task6" onclick="saveState('task6')">
+      <label for="task6" id="label_task6">Module 4: Astronomy in India, Chemistry in India</label>
+    </div>
+  </div>
+
+  <!-- Sessional Exam 1: March 18 - March 20 (Units I and II) -->
+  <div class="exam">
+    <h2>Sessional Exam 1: March 18 - March 20 (Units I and II)</h2>
+    <!-- Add details for Sessional Exam 1 -->
+  </div>
+
+  <!-- Week 5: March 26 - March 31 -->
+  <div class="week">
+    <h2>Week 5: March 26 - March 31</h2>
+    <div class="task">
+      <input type="checkbox" id="task7" onclick="saveState('task7')">
+      <label for="task7" id="label_task7">Module 4: Mathematics in India, Physics in India</label>
+    </div>
+  </div>
+
+  <!-- Week 6: April 2 - April 7 -->
+  <div class="week">
+    <h2>Week 6: April 2 - April 7</h2>
+    <div class="task">
+      <input type="checkbox" id="task8" onclick="saveState('task8')">
+      <label for="task8" id="label_task8">Module 4: Agriculture in India, Medicine in India</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task9" onclick="saveState('task9')">
+      <label for="task9" id="label_task9">Module 5: Indian Architect, Engineering and Architecture in Ancient India</label>
+    </div>
+  </div>
+
+  <!-- Week 7: April 9 - April 14 -->
+  <div class="week">
+    <h2>Week 7: April 9 - April 14</h2>
+    <div class="task">
+      <input type="checkbox" id="task10" onclick="saveState('task10')">
+      <label for="task10" id="label_task10">Module 5: Sculptures, Seals, coins, Pottery</label>
+    </div>
+  </div>
+
+  <!-- Sessional Exam 2: April 25 - April 27 (Units III, IV, and V) -->
+  <div class="exam">
+    <h2>Sessional Exam 2: April 25 - April 27 (Units III, IV, and V)</h2>
+    <!-- Add details for Sessional Exam 2 -->
+  </div>
+
+  <!-- Week 9: April 24 - April 28 -->
+  <div class="week">
+    <h2>Week 9: April 24 - April 28</h2>
+    <div class="task">
+      <input type="checkbox" id="task11" onclick="saveState('task11')">
+      <label for="task11" id="label_task11">Module 5: Puppetry, Dance, Music</label>
+    </div>
+  </div>
+
+  <!-- Week 10: April 30 - May 5 -->
+  <div class="week">
+    <h2>Week 10: April 30 - May 5</h2>
+    <div class="task">
+      <input type="checkbox" id="task12" onclick="saveState('task12')">
+      <label for="task12" id="label_task12">Module 5: Theatre, drama, Painting</label>
+    </div>
+  </div>
+
+  <!-- Week 11: May 7 - May 11 -->
+  <div class="week">
+    <h2>Week 11: May 7 - May 11</h2>
+    <div class="task">
+      <input type="checkbox" id="task13" onclick="saveState('task13')">
+      <label for="task13" id="label_task13">Module 5: Martial Arts Traditions, Fairs and Festivals</label>
+    </div>
+  </div>
+
+  <!-- Pre-University Exam: May 13 - May 18 (All Units) -->
+  <div class="exam">
+    <h2>Pre-University Exam: May 13 - May 18 (All Units)</h2>
+    
+  </div>
+</div>
+
+<script>
+  // Function to save the state of a task (checked or unchecked) to local storage
+  function saveState(taskId) {
+    const checkbox = document.getElementById(taskId);
+    localStorage.setItem(taskId, checkbox.checked);
+    updateLabelStyle(taskId, checkbox.checked);
+  }
+
+  // Function to load the state of tasks from local storage
+  function loadState(taskId) {
+    const checkbox = document.getElementById(taskId);
+    const checked = JSON.parse(localStorage.getItem(taskId));
+    if (checked !== null) {
+      checkbox.checked = checked;
+      updateLabelStyle(taskId, checked);
+    }
+  }
+
+  // Update label style based on task completion status
+  function updateLabelStyle(taskId, checked) {
+    const label = document.getElementById('label_' + taskId);
+    if (checked) {
+      label.classList.add('completed');
+    } else {
+      label.classList.remove('completed');
+    }
+  }
+
+  // Load the state of all tasks when the window loads
+  window.onload = function() {
+    for (let i = 1; i <= 14; i++) {
+      loadState('task' + i);
+    }
+  };
+</script>
+
+</body>
+</html>

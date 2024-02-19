@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Software Project Management Study Plan</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #555;
+  }
+
+  .task label {
+    display: block;
+    margin-left: 25px;
+    font-size: 1.1em;
+    line-height: 1.6;
+    transition: text-decoration 0.3s ease;
+    cursor: pointer;
+  }
+
+  .task input[type="checkbox"] {
+    margin-right: 10px;
+    transform: translateY(2px);
+    cursor: pointer;
+  }
+
+  .task input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: #777;
+  }
+
+  .exam {
+    text-align: center;
+    background-color: #f0ad4e;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+
+  .exam h2 {
+    font-size: 1.5em;
+  }
+
+  .back-button {
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  
+</style>
+</head>
+<body>
+
+<div class="container">
+  
+  <h1>Software Project Management Study Plan</h1>
+  <div class="week">
+    <h2>Week 1: February 19 - February 24</h2>
+    <!-- Add tasks for Week 1 -->
+    <div class="task">
+      <input type="checkbox" id="task1" onclick="saveState('task1')">
+      <label for="task1" id="label_task1">February 19 (Monday): Project Evaluation and Project Planning: Importance of Software Project Management, Activities, Methodologies</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task2" onclick="saveState('task2')">
+      <label for="task2" id="label_task2">February 20 (Tuesday): Project Evaluation and Project Planning: Categorization of Software Projects, Setting objectives, Management Principles</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task3" onclick="saveState('task3')">
+      <label for="task3" id="label_task3">February 21 (Wednesday): Project Evaluation and Project Planning: Management Control, Project portfolio Management, Cost-benefit evaluation technology</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task4" onclick="saveState('task4')">
+      <label for="task4" id="label_task4">February 22 (Thursday): Project Evaluation and Project Planning: Risk evaluation, Strategic program Management, Stepwise Project Planning</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task5" onclick="saveState('task5')">
+      <label for="task5" id="label_task5">February 23 (Friday): Project Life Cycle and Effort Estimation: Software process and Process Models, Choice of Process models</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task6" onclick="saveState('task6')">
+      <label for="task6" id="label_task6">February 24 (Saturday): Project Life Cycle and Effort Estimation: Rapid Application development, Agile methods</label>
+    </div>
+  </div>
+
+  <!-- Week 2: February 26 - March 2 -->
+  <div class="week">
+    <h2>Week 2: February 26 - March 2</h2>
+    <!-- Add tasks for Week 2 -->
+    <div class="task">
+      <input type="checkbox" id="task7" onclick="saveState('task7')">
+      <label for="task7" id="label_task7">February 26 (Monday): Project Life Cycle and Effort Estimation: Dynamic System Development Method, Extreme Programming</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task8" onclick="saveState('task8')">
+      <label for="task8" id="label_task8">February 27 (Tuesday): Project Life Cycle and Effort Estimation: Managing interactive processes, Basics of Software estimation</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task9" onclick="saveState('task9')">
+      <label for="task9" id="label_task9">February 28 (Wednesday): Project Life Cycle and Effort Estimation: Effort and Cost estimation techniques, COSMIC Full function points</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task10" onclick="saveState('task10')">
+      <label for="task10" id="label_task10">March 1 (Thursday): Project Life Cycle and Effort Estimation: COCOMO II - a Parametric Productivity Model</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task11" onclick="saveState('task11')">
+      <label for="task11" id="label_task11">March 2 (Friday): Activity Planning and Risk Management: Objectives of Activity planning, Project schedules, Activities</label>
+    </div>
+  </div>
+
+  <!-- Week 3: March 4 - March 8 -->
+  <div class="week">
+    <h2>Week 3: March 4 - March 8</h2>
+    <!-- Add tasks for Week 3 -->
+    <div class="task">
+      <input type="checkbox" id="task12" onclick="saveState('task12')">
+      <label for="task12" id="label_task12">March 4 (Monday): Activity Planning and Risk Management: Sequencing and scheduling, Network Planning models</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task13" onclick="saveState('task13')">
+      <label for="task13" id="label_task13">March 5 (Tuesday): Activity Planning and Risk Management: Formulating Network Model, Forward Pass & Backward Pass techniques</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task14" onclick="saveState('task14')">
+      <label for="task14" id="label_task14">March 6 (Wednesday): Activity Planning and Risk Management: Critical path (CRM) method, Risk identification, Assessment</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task15" onclick="saveState('task15')">
+      <label for="task15" id="label_task15">March 7 (Thursday): Activity Planning and Risk Management: Risk Planning, Risk Management, PERT technique</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task16" onclick="saveState('task16')">
+      <label for="task16" id="label_task16">March 8 (Friday): Activity Planning and Risk Management: Monte Carlo simulation, Resource Allocation, Creation of critical paths</label>
+    </div>
+  </div>
+
+  <!-- Week 4: March 11 - March 15 -->
+  <div class="week">
+    <h2>Week 4: March 11 - March 15</h2>
+    <!-- Add tasks for Week 4 -->
+    <div class="task">
+      <input type="checkbox" id="task17" onclick="saveState('task17')">
+      <label for="task17" id="label_task17">March 11 (Monday): Project Management and Control: Framework for Management and control, Collection of data</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task18" onclick="saveState('task18')">
+      <label for="task18" id="label_task18">March 12 (Tuesday): Project Management and Control: Visualizing progress, Cost monitoring, Earned Value Analysis</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task19" onclick="saveState('task19')">
+      <label for="task19" id="label_task19">March 13 (Wednesday): Project Management and Control: Prioritizing Monitoring, Project tracking, Change control</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task20" onclick="saveState('task20')">
+      <label for="task20" id="label_task20">March 14 (Thursday): Project Management and Control: Software Configuration Management, Managing contracts</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task21" onclick="saveState('task21')">
+      <label for="task21" id="label_task21">March 15 (Friday): Project Management and Control: Contract Management, Revision and Practice</label>
+    </div>
+  </div>
+
+  <!-- Week 5: March 18 - March 22 -->
+  <div class="week">
+    <h2>Week 5: March 18 - March 22</h2>
+    <!-- Add tasks for Week 5 -->
+    <div class="exam">
+        <h2>Sessional Exam 1: March 18 - March 20 (Units I and II)</h2>
+        <!-- Add details for Sessional Exam 1 -->
+      </div>
+    <div class="task">
+      <input type="checkbox" id="task22" onclick="saveState('task22')">
+      <label for="task22" id="label_task22">March 21 (Thursday): Staffing in Software Projects: Managing people, Organizational behavior, Best methods of staff selection</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task23" onclick="saveState('task23')">
+      <label for="task23" id="label_task23">March 22 (Friday): Staffing in Software Projects: Motivation, The Oldham Hackman job characteristic model, Stress, Health and Safety</label>
+    </div>
+  </div>
+
+  <!-- Week 6: March 25 - March 29 -->
+  <div class="week">
+    <h2>Week 6: March 25 - March 29</h2>
+    <!-- Add tasks for Week 6 -->
+    <div class="task">
+      <input type="checkbox" id="task24" onclick="saveState('task24')">
+      <label for="task24" id="label_task24">March 25 (Monday): Staffing in Software Projects: Ethical and Professional concerns, Working in teams, Decision making</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task25" onclick="saveState('task25')">
+      <label for="task25" id="label_task25">March 26 (Tuesday): Staffing in Software Projects: Organizational structures, Dispersed and Virtual teams, Communications genres</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task26" onclick="saveState('task26')">
+      <label for="task26" id="label_task26">March 27 (Wednesday): Staffing in Software Projects: Communication plans, Leadership</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task27" onclick="saveState('task27')">
+      <label for="task27" id="label_task27">March 28 (Thursday): Revision and Practice</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task28" onclick="saveState('task28')">
+      <label for="task28" id="label_task28">March 29 (Friday): Revision and Practice</label>
+    </div>
+  </div>
+
+  <!-- Week 7: April 1 - April 5 -->
+  <div class="week">
+    
+    <div class="exam">
+        <h2>Sessional Exam 2: April 25 - April 27 (Units III, IV, and V)</h2>
+        <!-- Add details for Sessional Exam 2 -->
+      </div>
+      <h2>Week 7: April 1 - April 5</h2>
+      <!-- Add tasks for Week 7 -->
+    <div class="task">
+      <input type="checkbox" id="task29" onclick="saveState('task29')">
+      <label for="task29" id="label_task29">April 4 (Thursday): Revision and Practice</label>
+    </div>
+    <div class="task">
+      <input type="checkbox" id="task30" onclick="saveState('task30')">
+      <label for="task30" id="label_task30">April 5 (Friday): Revision and Practice</label>
+    </div>
+  </div>
+
+  <!-- Pre-University Exam: May 13 - May 18 (All Units) -->
+  <div class="exam">
+    <h2>Pre-University Exam: May 13 - May 18 (All Units)</h2>
+  </div>
+  
+</div>
+</body>
+</div>
+
+<script>
+  // Function to save the state of a task (checked or unchecked) to local storage
+  function saveState(taskId) {
+    const checkbox = document.getElementById(taskId);
+    localStorage.setItem(taskId, checkbox.checked);
+    updateLabelStyle(taskId, checkbox.checked);
+  }
+
+  // Function to load the state of tasks from local storage
+  function loadState(taskId) {
+    const checkbox = document.getElementById(taskId);
+    const checked = JSON.parse(localStorage.getItem(taskId));
+    if (checked !== null) {
+      checkbox.checked = checked;
+      updateLabelStyle(taskId, checked);
+    }
+  }
+
+  // Update label style based on task completion status
+  function updateLabelStyle(taskId, checked) {
+    const label = document.getElementById('label_' + taskId);
+    if (checked) {
+      label.classList.add('completed');
+    } else {
+      label.classList.remove('completed');
+    }
+  }
+
+  
+
+  // Load the state of all tasks when the window loads
+  window.onload = function() {
+    for (let i = 1; i <= 30; i++) {
+      loadState('task' + i);
+    }
+  };
+</script>
+
+</body>
+</html>

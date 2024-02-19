@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task Planner</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #292929;
+    color: #fff;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .box-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto; /* Aligning towards the center */
+  }
+
+  .subject {
+    width: calc(33.33% - 8px);
+    margin-bottom: 20px;
+    padding: 40px 20px;
+    background-color: #444;
+    border-radius: 12px;
+    text-align: center;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* White color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subject:hover {
+    background-color: #555;
+  }
+
+  .subject h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  /* Adjusting the margin between specific subjects */
+  #subject2, #subject4, #subject6 {
+    margin-right: 4px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Task Planner</h1>
+  <div class="box-holder">
+    <a href="MLT.html" class="subject" id="subject1">
+      <h2>Machine Learning Techniques</h2>
+    </a>
+    <a href="WT.html" class="subject" id="subject2">
+      <h2>Web Technology</h2>
+    </a>
+    <a href="CN.html" class="subject" id="subject3">
+      <h2>Computer Networks</h2>
+    </a>
+    <a href="IA.html" class="subject" id="subject4">
+      <h2>Image Analytics</h2>
+    </a>
+    <a href="SPM.html" class="subject" id="subject5">
+      <h2>Software Project Management</h2>
+    </a>
+    <a href="ITCS.html" class="subject" id="subject6">
+      <h2>Indian Tradition, Culture, and Society</h2>
+    </a>
+  </div>
+</div>
+
+<script>
+function showTasks(subjectId) {
+  // You can add JavaScript code here to show tasks for the clicked subject
+  console.log('Tasks for ' + subjectId);
+}
+</script>
+
+</body>
+</html>
